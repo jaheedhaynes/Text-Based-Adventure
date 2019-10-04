@@ -6,17 +6,64 @@
 //  Copyright © 2019 Jaheed Haynes. All rights reserved.
 //
 /*default:
-print()
-print("ARE YOU TRYING TO GET HOME!?!?! 'YES' or 'NO' ")
-print()
-print("TIME IS WASTING...YOU NEED TO GET HOME?!?")
+ print()
+ print("ARE YOU TRYING TO GET HOME!?!?! 'YES' or 'NO' ")
+ print()
+ print("TIME IS WASTING...YOU NEED TO GET HOME?!?")
  // } while response == "NO"
-  // print("AwWWW MAN, HERE WE GO AGAIN")
-
+ // print("AwWWW MAN, HERE WE GO AGAIN")
+ 
  //if response == "yes" {
  //  print("About Time Man! Let's Get home A$AP!")
  //}
  */
+/*
+ 
+ /*  var response2 = " "
+ response2 = readLine() ?? " "
+ switch response2 {
+ case "YES":
+ print("WHILE YOU ARE RESTING A MYSTERIOUS MAN APPROACHES YOU AND ASKS FOR THE TIME")
+ sleep(3)
+ print("YOU TELL HIM ITS 3:30AM")
+ sleep(3)
+ print("THE MYSTERY MAN IS GREATFUL & PAYS FOR AN UBER FOR YOUR RIDE HOME 🚙💨")
+ case "NO":
+ print("YOU RUN AWAY AS FAST AS POSSIBLE")
+ sleep(3)
+ print("YOU MAKE IT HOME 2 HOURS LATER")
+ sleep(3)
+ print("YOU FORGOT YOUR KEYS AT PURSUIT!")
+ sleep(3)
+ print("☠️☠️☠️ YOU DIE OF HUNGER ☠️☠️☠️")
+ default:
+ print()
+ print("YOU GOTTA CHOOSE, 'YES' or 'NO' ")
+ print()
+ print("TIME IS WASTING...YOU NEED TO GET HOME?!?")
+ }
+ response2 = readLine() ?? ""
+ } while response == "NO"
+ print("DON'T YOU WANT TO SLEEP IN YOUR BED? , EAT FOOD? , SHOWER!?!?!")
+ 
+ 
+ 
+ /*     response = "open door"
+ case "leave":
+ print(" ")
+ print("So we're just walking into big wooden objects:door:? you're dead! Try again!")
+ print(" ")
+ default:
+ print(" ")
+ print("Ugh! First you have to 'leave'. Come on!")
+ print("try again, maybe I don't know an 'open door' could help, but what do I know, right?")
+ print(" ")
+ }
+ */*/
+
+ */
+
+ 
 import Foundation
 
 
@@ -79,13 +126,13 @@ repeat{
         print("DO YOU WANT TO TAKE A BREAK?")
         sleep(2)
         print("'YES' or 'NO'")
-        var response2 = " "
+    //var response2 = " "
     default:
         print("ANSWER 'YES' or 'NO'")
         
-        var response2 = " "
-        response2 = readLine() ?? " "
-        switch response2 {
+        var response = " "
+        response = readLine() ?? " "
+        switch response {
         case "YES":
             print("WHILE YOU ARE RESTING A MYSTERIOUS MAN APPROACHES YOU AND ASKS FOR THE TIME")
             sleep(3)
@@ -106,51 +153,54 @@ repeat{
             print()
             print("TIME IS WASTING...YOU NEED TO GET HOME?!?")
         }
-        response2 = readLine() ?? ""
-    } while  response2 == "NO"
-    print("DON'T YOU WANT TO SLEEP IN YOUR BED? , EAT FOOD? , SHOWER!?!?!")
-} while response == "NO"
-print("AwWWW MAN, HERE WE GO AGAIN")
-    
- 
-  /*  var response2 = " "
-    response2 = readLine() ?? " "
-    switch response2 {
-    case "YES":
-        print("WHILE YOU ARE RESTING A MYSTERIOUS MAN APPROACHES YOU AND ASKS FOR THE TIME")
-        sleep(3)
-        print("YOU TELL HIM ITS 3:30AM")
-        sleep(3)
-        print("THE MYSTERY MAN IS GREATFUL & PAYS FOR AN UBER FOR YOUR RIDE HOME 🚙💨")
-    case "NO":
-        print("YOU RUN AWAY AS FAST AS POSSIBLE")
-        sleep(3)
-        print("YOU MAKE IT HOME 2 HOURS LATER")
-        sleep(3)
-        print("YOU FORGOT YOUR KEYS AT PURSUIT!")
-        sleep(3)
-        print("☠️☠️☠️ YOU DIE OF HUNGER ☠️☠️☠️")
-    default:
-        print()
-        print("YOU GOTTA CHOOSE, 'YES' or 'NO' ")
-        print()
-        print("TIME IS WASTING...YOU NEED TO GET HOME?!?")
-    }
-    response2 = readLine() ?? ""
-} while response == "NO"
+        
+        response = " "
+        response = readLine() ?? " "
+        switch response {
+        case "SUBWAY":
+            print()
+            print("YOU'RE WALKING TO THE SUBWAY AND A MYSTERIOUS MAN WALKS UP TO YOU")
+            sleep(2)
+            print()
+            print("MYSTERIOUS MAN ASKS 'HOW MUCH WOOD COULD A WOODCHCUCK CHUCK IF A WOOD CHUCK COULD CHUCK WOOD")
+            sleep(2)
+            print()
+            print("DO YOU WANT TO TALK TO MYSTERY MAN?")
+            sleep(2)
+            print("'YES' or 'NO'")
+            response = " "
+        default:
+            print("ANSWER 'YES' or 'NO'")
+            
+            response = " "
+            response = readLine() ?? " "
+            switch response {
+            case "YES":
+                print("WHILE YOU ARE RESTING A MYSTERIOUS MAN APPROACHES YOU AND ASKS FOR THE TIME")
+                sleep(3)
+                print("YOU TELL HIM ITS 3:30AM")
+                sleep(3)
+                print("THE MYSTERY MAN IS GREATFUL & PAYS FOR AN UBER FOR YOUR RIDE HOME 🚙💨")
+            case "NO":
+                print("YOU RUN AWAY AS FAST AS POSSIBLE")
+                sleep(3)
+                print("YOU MAKE IT HOME 2 HOURS LATER")
+                sleep(3)
+                print("YOU FORGOT YOUR KEYS AT PURSUIT!")
+                sleep(3)
+                print("☠️☠️☠️ YOU DIE OF HUNGER ☠️☠️☠️")
+            default:
+                print()
+                print("YOU GOTTA CHOOSE, 'YES' or 'NO' ")
+                print()
+                print("TIME IS WASTING...YOU NEED TO GET HOME?!?")
+            }
+            response = readLine() ?? ""
+        } //while  response == "NO"
+        // print("DON'T YOU WANT TO SLEEP IN YOUR BED? , EAT FOOD? , SHOWER!?!?!")
+    }  //while response == "NO"
+    //print("AwWWW MAN, HERE WE GO AGAIN")
+} while  response == "NO"
 print("DON'T YOU WANT TO SLEEP IN YOUR BED? , EAT FOOD? , SHOWER!?!?!")
 
 
-
-/*     response = "open door"
- case "leave":
- print(" ")
- print("So we're just walking into big wooden objects:door:? you're dead! Try again!")
- print(" ")
- default:
- print(" ")
- print("Ugh! First you have to 'leave'. Come on!")
- print("try again, maybe I don't know an 'open door' could help, but what do I know, right?")
- print(" ")
- }
- */*/
