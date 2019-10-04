@@ -84,24 +84,26 @@ repeat {
     case "RUN":
         print()
         print("YOU'RE RUNNING FOR ABOUT A MILE AND YOU GET TIRED")
-        sleep(1)
+        sleep(2)
         print("DO YOU WANT TO TAKE A BREAK?")
-        sleep(1)
+        sleep(2)
         print("'YES' or 'NO'")
         
-    default:
-        print("ANSWER 'YES' or 'NO'")
+    //default:
+       // print("ANSWER 'YES' or 'NO'")
         
-        //var response = " "
         response = readLine() ?? " "
         switch response {
         case "YES":
             print("WHILE YOU ARE RESTING A MYSTERIOUS MAN APPROACHES YOU AND ASKS FOR THE TIME")
             sleep(3)
+            print()
             print("YOU TELL HIM ITS 3:30AM")
             sleep(3)
+            print()
             print("THE MYSTERY MAN IS GREATFUL & PAYS FOR AN UBER FOR YOUR RIDE HOME 🚙💨")
             break
+            
         case "NO":
             print("YOU RUN AWAY AS FAST AS POSSIBLE")
             sleep(1)
@@ -145,7 +147,7 @@ Y88b 888Y8b.    888  888Y88b. 888  888
    ::::::`:::::;'  /  /   `#
 
 """)
-        default:
+         default:
             print("Time is of the essence, 'YES' or 'NO'")
         }
         
@@ -161,9 +163,10 @@ Y88b 888Y8b.    888  888Y88b. 888  888
                 sleep(1)
                 print("'YES' or 'NO'")
                 response = " "
-            } //else {
-                //print("ANSWER 'YES' or 'NO'")
             }
+               default:
+            print("Time is of the essence, 'YES' or 'NO'") //print("ANSWER 'YES' or 'NO'")
+            } 
             
             //response = " "
             //response = readLine() ?? " "
@@ -217,9 +220,10 @@ Y88b 888Y8b.    888  888Y88b. 888  888
 
                     """)
             default:
+                print("TIME IS WASTING...YOU NEED TO GET HOME?!?")
                 print()
                 print("YOU GOTTA CHOOSE, 'YES' or 'NO' ")
                 print()
-                print("TIME IS WASTING...YOU NEED TO GET HOME?!?")
+                
             }
         } while response != "no"
