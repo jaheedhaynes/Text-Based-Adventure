@@ -110,48 +110,52 @@ repeat {
             print("YOU MAKE IT HOME 2 HOURS LATER")
             sleep(1)
             print("YOU FORGOT YOUR KEYS AT PURSUIT!")
-            sleep(1)
+            sleep(2)
             print("""
 
-                                        ☠️☠️☠️ YOU DIE OF HUNGER ☠️☠️☠️
+                                                    ☠️☠️☠️ YOU DIE OF HUNGER ☠️☠️☠️
 
-                                             888                888   888
-                                             888                888   888
-                                             888                888   888
-                                         .d88888 .d88b.  8888b. 88888888888b.
-                                        d88" 888d8P  Y8b    "88b888   888 "88b
-                                        888  88888888888.d888888888   888  888
-                                        Y88b 888Y8b.    888  888Y88b. 888  888
-                                         "Y88888 "Y8888 "Y888888 "Y888888  888
+                                                         888                888   888
+                                                         888                888   888
+                                                         888                888   888
+                                                     .d88888 .d88b.  8888b. 88888888888b.
+                                                    d88" 888d8P  Y8b    "88b888   888 "88b
+                                                    888  88888888888.d888888888   888  888
+                                                    Y88b 888Y8b.    888  888Y88b. 888  888
+                                                     "Y88888 "Y8888 "Y888888 "Y888888  888
 
-                                                      ...
-                                                     ;::::;
-                                                   ;::::; :;
-                                                 ;:::::'   :;
-                                                ;:::::;     ;.
-                                               ,:::::'       ;           OOO\
-                                               ::::::;       ;          OOOOO\
-                                               ;:::::;       ;         OOOOOOOO
-                                              ,;::::::;     ;'         / OOOOOOO
-                                            ;:::::::::`. ,,,;.        /  / DOOOOOO
-                                          .';:::::::::::::::::;,     /  /     DOOOO
-                                         ,::::::;::::::;;;;::::;,   /  /        DOOO
-                                        ;`::::::`'::::::;;;::::: ,#/  /          DOOO
-                                        :`:::::::`;::::::;;::: ;::#  /            DOOO
-                                        ::`:::::::`;:::::::: ;::::# /              DOO
-                                        `:`:::::::`;:::::: ;::::::#/               DOO
-                                         :::`:::::::`;; ;:::::::::##                OO
-                                         ::::`:::::::`;::::::::;:::#                OO
-                                         `:::::`::::::::::::;'`:;::#                O
-                                          `:::::`::::::::;' /  / `:#
-                                           ::::::`:::::;'  /  /   `#
+                                                                  ...
+                                                                 ;::::;
+                                                               ;::::; :;
+                                                             ;:::::'   :;
+                                                            ;:::::;     ;.
+                                                           ,:::::'       ;           OOO\
+                                                           ::::::;       ;          OOOOO\
+                                                           ;:::::;       ;         OOOOOOOO
+                                                          ,;::::::;     ;'         / OOOOOOO
+                                                        ;:::::::::`. ,,,;.        /  / DOOOOOO
+                                                      .';:::::::::::::::::;,     /  /     DOOOO
+                                                     ,::::::;::::::;;;;::::;,   /  /        DOOO
+                                                    ;`::::::`'::::::;;;::::: ,#/  /          DOOO
+                                                    :`:::::::`;::::::;;::: ;::#  /            DOOO
+                                                    ::`:::::::`;:::::::: ;::::# /              DOO
+                                                    `:`:::::::`;:::::: ;::::::#/               DOO
+                                                     :::`:::::::`;; ;:::::::::##                OO
+                                                     ::::`:::::::`;::::::::;:::#                OO
+                                                     `:::::`::::::::::::;'`:;::#                O
+                                                      `:::::`::::::::;' /  / `:#
+                                                       ::::::`:::::;'  /  /   `#
 
-""")
+            """)
+            
         default:
             print("Time is of the essence, 'YES' or 'NO'")
+            
+        //default:
+            //print("Time is of the essence, 'YES' or 'NO'")
         }
         
-        if response == "subway" {
+    case "subway" :
             print()
             print("YOU'RE WALKING TO THE SUBWAY AND A MYSTERIOUS MAN WALKS UP TO YOU")
             sleep(1)
@@ -161,29 +165,35 @@ repeat {
             print()
             print("DO YOU WANT TO TALK TO MYSTERY MAN?")
             sleep(1)
+            print()
             print("'YES' or 'NO'")
             response = " "
-        }
-    default:
+        
+        default:
         print("Time is of the essence, 'YES' or 'NO'") //print("ANSWER 'YES' or 'NO'")
     }
     
     //response = " "
-    //response = readLine() ?? " "
+    response = readLine()?.lowercased() ?? " "
     switch response {
     case "yes":
         print("WHILE YOU ARE RESTING A MYSTERIOUS MAN APPROACHES YOU AND ASKS FOR THE TIME")
         sleep(1)
+        print()
         print("YOU TELL HIM ITS 3:30AM")
+        print()
         sleep(1)
         print("THE MYSTERY MAN IS GREATFUL & PAYS FOR AN UBER FOR YOUR RIDE HOME 🚙💨")
     case "no":
         print("YOU RUN AWAY AS FAST AS POSSIBLE")
         sleep(1)
+        print()
         print("YOU MAKE IT HOME 2 HOURS LATER")
         sleep(1)
+        print()
         print("YOU FORGOT YOUR KEYS AT PURSUIT!")
-        sleep(1)
+        sleep(2)
+        print()
         print("""
                                                              ☠️☠️☠️ YOU DIE OF HUNGER ☠️☠️☠️
 
